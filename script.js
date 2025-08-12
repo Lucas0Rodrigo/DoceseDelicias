@@ -91,7 +91,7 @@ window.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const logo = document.querySelector("header .logo");
   const imagens = [
-    "./img/Fav Icon.png",
+    "./img/Cookie.webp",
     "./img/Cookie Mordido.webp",
     "./img/Cookie Mordido 2.webp",
     "./img/Vazio.webp",
@@ -114,4 +114,5 @@ document.addEventListener("DOMContentLoaded", function () {
     telInput.value = valor;
   });
 });
+
 
