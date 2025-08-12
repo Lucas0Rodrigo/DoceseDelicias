@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Style.css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./img/Fav Icon.png" type="image/png" />
+  <title>Doces&Delícias</title>
+</head>
+<body id="Home">
+  <header>
+    <h1><a href="./Index.html">Doces&Delícias</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#Home">Início</a></li>
+        <li><a href="#Ds">Destaques</a></li>
+        <li><a href="#Produtos">Comprar</a></li>
+        <li><a href="#Sobre">Sobre</a></li>
+        <li><a href="#Ctt">Contato</a></li>
+      </ul>
+    </nav>
+    <img src="./img/Fav Icon.png" alt="Logo" class="logo" />
+  </header>
+
+  <section >
+    <img src="./img/Banner.webp" width="100%" height="auto" />
+  </section>
+
+<section id="Ds" class="produtos2 id">
+  <h2 class="titulo-categorias id">Produtos em Destaque</h2>
+</section>
+
+<section  class="destaques">
+  <article class="produto destaque">
+    <img src="./img/scoxinha.webp" alt="Coxinha">
+    <h3>Coxinha</h3>
+    <p>R$ 6,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto destaque">
+    <img src="./img/tmaca.webp" alt="Torta de Maçã">
+    <h3>Torta de Maçã</h3>
+    <p>R$ 32,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto destaque">
+    <img src="./img/ccafe.webp" alt="Café Expresso">
+    <h3>Café Expresso</h3>
+    <p>R$ 4,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+</section>
+
+<div class="botoes-carrossel">
+  <button id="btn-prev" aria-label="Anterior">◀</button>
+  <button id="btn-next" aria-label="Próximo">▶</button>
+</div>
+
+  <section id="Produtos" class="filtros">
+    <h2>Filtrar Produtos</h2>
+    <div class="filtro">
+      <label for="categoria">Categoria:</label>
+      <select id="categoria" name="categoria">
+        <option value="todos">Todos</option>
+        <option value="doces-artesanais">Doces Artesanais</option>
+        <option value="tortas">Tortas</option>
+        <option value="doces">Doces</option>
+        <option value="padaria">Produtos de Padaria</option>
+        <option value="salgados">Salgados</option>
+        <option value="bebidas">Bebidas</option>
+        <option value="cafes">Cafés</option>
+      </select>
+    </div>
+
+  </section>
+
+<!-- ========== DOCES ARTESANAIS ========== -->
+<section class="produtos2">
+  <h2 class="titulo-categorias" data-categoria="doces-artesanais">Doces Artesanais</h2>
+</section>
+<section class="produtos">
+  <article class="produto" data-categoria="doces-artesanais">
+    <img src="./img/bcaseiro.webp" alt="Bolo Caseiro">
+    <h3>Bolo Caseiro</h3>
+    <p>R$ 25,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="doces-artesanais">
+    <img src="./img/bchocolate.webp" alt="Bolo de Chocolate">
+    <h3>Bolo de Chocolate</h3>
+    <p>R$ 30,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="doces-artesanais">
+    <img src="./img/bcenoura.webp" alt="Bolo de Cenoura">
+    <h3>Bolo de Cenoura</h3>
+    <p>R$ 28,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="doces-artesanais">
+    <img src="./img/blimao.webp" alt="Bolo de Limão">
+    <h3>Bolo de Limão</h3>
+    <p>R$ 27,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+</section>
+
+<!-- ========== TORTAS ========== -->
+<section class="produtos2">
+  <h2 class="titulo-categorias" data-categoria="tortas">Tortas</h2>
+</section>
+<section class="produtos">
+  <article class="produto" data-categoria="tortas">
+    <img src="./img/tmaca.webp" alt="Torta de Maçã">
+    <h3>Torta de Maçã</h3>
+    <p>R$ 32,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="tortas">
+    <img src="./img/tfrutasv.webp" alt="Torta de Frutas Vermelhas">
+    <h3>Torta de Frutas Vermelhas</h3>
+    <p>R$ 35,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="tortas">
+    <img src="./img/tlimao.webp" alt="Torta de Limão">
+    <h3>Torta de Limão</h3>
+    <p>R$ 30,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+</section>
+
+<!-- ========== DOCES ========== -->
+<section class="produtos2">
+  <h2 class="titulo-categorias" data-categoria="doces">Doces</h2>
+</section>
+<section class="produtos">
+  <article class="produto" data-categoria="doces">
+    <img src="./img/dbrigadeiro.webp" alt="Brigadeiro Gourmet">
+    <h3>Brigadeiro Gourmet</h3>
+    <p>R$ 3,50</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="doces">
+    <img src="./img/dbeijinho.webp" alt="Beijinho">
+    <h3>Beijinho</h3>
+    <p>R$ 3,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="doces">
+    <img src="./img/dcocada.webp" alt="Cocada">
+    <h3>Cocada</h3>
+    <p>R$ 4,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+</section>
+
+<!-- ========== PRODUTOS DE PADARIA ========== -->
+<section class="produtos2">
+  <h2 class="titulo-categorias" data-categoria="padaria">Produtos de Padaria</h2>
+</section>
+<section class="produtos">
+  <article class="produto" data-categoria="padaria">
+    <img src="./img/pfrances.webp" alt="Pão Francês">
+    <h3>Pães</h3>
+    <p>R$ 10,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="padaria">
+    <img src="./img/pcaseiro.webp" alt="Pão Caseiro">
+    <h3>Pão Caseiro</h3>
+    <p>R$ 12,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="padaria">
+    <img src="./img/pqueijo.webp" alt="Pão de Queijo">
+    <h3>Pão de Queijo</h3>
+    <p>R$ 1,50 (unidade)</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="padaria">
+    <img src="./img/pcroissaint.webp" alt="Croissant">
+    <h3>Croissant</h3>
+    <p>R$ 6,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+</section>
+
+<!-- ========== SALGADOS ========== -->
+<section class="produtos2">
+  <h2 class="titulo-categorias" data-categoria="salgados">Salgados</h2>
+</section>
+<section class="produtos">
+  <article class="produto" data-categoria="salgados">
+    <img src="./img/sempada.webp" alt="Empada de Frango">
+    <h3>Empada de Frango</h3>
+    <p>R$ 7,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="salgados">
+    <img src="./img/squiche.webp" alt="Quiche de Legumes">
+    <h3>Quiche de Legumes</h3>
+    <p>R$ 8,50</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="salgados">
+    <img src="./img/scoxinha.webp" alt="Coxinha">
+    <h3>Coxinha</h3>
+    <p>R$ 6,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+</section>
+
+<!-- ========== BEBIDAS ========== -->
+<section class="produtos2">
+  <h2 class="titulo-categorias" data-categoria="bebidas">Bebidas</h2>
+</section>
+<section class="produtos">
+  <article class="produto" data-categoria="bebidas">
+    <img src="./img/snatural.webp" alt="Sucos Naturais">
+    <h3>Sucos Naturais</h3>
+    <p>R$ 5,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="bebidas">
+    <img src="./img/slaranja.webp" alt="Suco de Laranja">
+    <h3>Suco de Laranja</h3>
+    <p>R$ 6,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="bebidas">
+    <img src="./img/slimao.webp" alt="Suco de Limão">
+    <h3>Suco de Limão</h3>
+    <p>R$ 5,50</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="bebidas">
+    <img src="./img/ssmoothie.webp" alt="Smoothie de Frutas">
+    <h3>Smoothie de Frutas</h3>
+    <p>R$ 7,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+</section>
+
+<!-- ========== CAFÉS ========== -->
+<section class="produtos2">
+  <h2 class="titulo-categorias" data-categoria="cafes">Cafés</h2>
+</section>
+<section class="produtos">
+  <article class="produto" data-categoria="cafes">
+    <img src="./img/ccafe.webp" alt="Café Expresso">
+    <h3>Café Expresso</h3>
+    <p>R$ 4,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="cafes">
+    <img src="./img/ccapuccino.webp" alt="Cappuccino">
+    <h3>Cappuccino</h3>
+    <p>R$ 5,50</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+  <article class="produto" data-categoria="cafes">
+    <img src="./img/cchocolate.webp" alt="Chocolate Quente">
+    <h3>Chocolate Quente</h3>
+    <p>R$ 6,00</p>
+    <a href="info.html"><button class="comprar">Mais informações</button></a>
+  </article>
+</section>
+
+<!--Atenção-->
+
+<section class="atencao">
+  <article class="att-img">
+    <img src="./img/Atençao.webp" alt="Atencão" />
+  </article>
+  <article class="att-texto">
+    <h2>Ops...</h2>
+    <p>Nosso cardapio ainda é pequeno.<br>
+    Estamos trabalhando para trazer mais produtos deliciosos para você!<br>
+    Fique ligado nas novidades!</p>
+</section>
+
+<section id="Sobre"></section>
+
+<section class="sobre">
+  <h2>Sobre Nós</h2>
+  <p>Na Doces & Delícias, acreditamos que momentos especiais merecem um sabor único. Somos uma confeitaria artesanal em Leme-SP, apaixonada por transformar ingredientes em doces memórias. Oferecemos bolos, tortas, doces e salgados feitos com carinho, qualidade e o verdadeiro sabor caseiro. Venha conhecer e se apaixonar pelo nosso jeitinho doce de fazer as coisas.</p>
+  <a href="sobre.html"><button class="btn-sobre">Saiba Mais</button></a>
+</section>
+
+<footer id="Ctt">
+  <article class="contato">
+    <h2>Contato</h2>
+    <p>
+        Endereço:
+        <br>
+        Endereço: Rua Exemplo, 123, Leme-SP
+    </p>
+    <p>
+        Telefone:
+        <br>
+        (19) 99999-9999
+    </p>
+    <p>
+        Email:
+        <br>
+        DocesEDelicias@gmail.com
+    </p>
+    <p>
+      Horário de Funcionamento:
+      <br>
+      Segunda a Sábado, das 7h às 18h
+    </p>
+  </article>
+  <article class="redes-sociais">
+    <h2>Redes Sociais</h2>
+    <p>Siga-nos nas redes sociais para ficar por dentro das novidades e promoções!</p>
+    <ul>
+      <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+      <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+      <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+    </ul>
+  </article>
+  
+  <!-- Área de contato com formulário -->
+  <article class="form-contato">
+    <h2>Deixe seu contato</h2>
+    <form action="#" method="post" class="form-flex">
+      <div class="linha-campos">
+        <div class="campo">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="campo">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required 
+       pattern="\(\d{2}\) \d{5}-\d{4}" 
+       placeholder="(99) 99999-9999"
+       title="Digite no formato (99) 99999-9999">
+        </div>
+      </div>
+      <div class="campo">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </article>
+  <div class="footer-copy">
+    &copy; 2025 Doces&Delícias. Todos os direitos reservados.
+  </div>
+</footer>
+</body>
+</html>

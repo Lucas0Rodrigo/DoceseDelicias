@@ -1,0 +1,860 @@
+/* Seu reset e básicos */
+*{
+    color: black;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F5DDCB;
+    padding-top: 90px; /* espaço para o header fixo */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* =========== HEADER =========== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #bc955b;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+header h1 a{
+  font-size: 2rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: font-size 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #a67c41;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+/* HEADER ENCOLHIDO AO ROLAR */
+header.compacto {
+  padding: 10px 40px;
+}
+header.compacto h1 {
+  font-size: 1.5rem;
+}
+header.compacto .logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* ===================== Categorias ===================== */
+nav.categorias {
+  text-align: center;
+  margin: 40px 0 30px;
+  font-family: "Montserrat", sans-serif;
+}
+nav.categorias button {
+  background-color: #bc955b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 8px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+nav.categorias button:hover {
+  background-color: #a67c41;
+  transform: scale(1.05);
+}
+nav.categorias button.ativo {
+  background-color: #8d6833;
+}
+
+/* ===================== Produtos ===================== */
+.titulo-categorias {
+  text-align: center;
+  font-size: 2em;
+  margin: 40px 0 20px 0;
+  color: #bc955b;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.titulo-categorias::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background-color: #bc955b;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+section.produtos2 {
+  display: grid;
+  gap: 25px;
+  padding: 0 30px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+section.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 30px;
+  font-family: "Montserrat", sans-serif;
+}
+article.produto {
+  background-color: #fff;
+  border: 1px solid #d1b28a;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+article.produto img {
+  max-height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: auto;
+}
+article.produto h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #333;
+}
+article.produto p {
+  font-weight: bold;
+  color: #bc955b;
+  font-size: 1em;
+}
+article.produto .comprar {
+  display: inline-block;
+  background-color: #572920;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+article.produto .comprar:hover {
+  background-color: #884234; /* Cor do botão ao passar o mouse */
+}
+
+/* Filtros */
+.filtro {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  color: #bc955b;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+}
+.filtro select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #d1b28a;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  color: #333;
+}
+.filtros h2{
+  font-size: 1.5em;
+  margin-right: 20px;
+  color: #bc955b;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* Atenção */
+.atencao {
+  text-align: center;
+  margin: 40px 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #ddaa74;
+}
+.atencao.oculto {
+  display: none;
+}
+.atencao img{
+  width: 50%;
+  height: auto;
+  margin: 20px auto;
+}
+.atencao p, .atencao h2 {
+  text-align: left;
+  color: #572920;
+}
+
+/* =================== CARROSSEL DESTAQUES =================== */
+
+.id {
+  margin-top: 60px;
+}
+.destaques {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 390px;
+  margin: 60px auto 0px;
+  perspective: 1000px;
+  font-family: "Montserrat", sans-serif;
+  overflow: visible;
+}
+
+.destaque {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 315px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, opacity 0.5s ease, z-index 0.5s ease;
+  opacity: 0.4;
+  transform: translate(-50%, -50%) scale(0.7);
+  z-index: 1;
+}
+
+.destaque img {
+  width: 90%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.destaque.active {
+  transform: translate(-50%, -50%) scale(1) translateZ(50px);
+  opacity: 1;
+  z-index: 10;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+}
+
+.destaque.prev {
+  transform: translate(calc(-150%), -50%) scale(0.8) translateZ(0);
+  opacity: 0.7;
+  z-index: 5;
+  filter: brightness(0.9);
+}
+
+.destaque.next {
+  transform: translate(calc(50%), -50%) scale(0.8) translateZ(0);
+  opacity: 0.7;
+  z-index: 5;
+  filter: brightness(0.9);
+}
+
+/* Botões do carrossel */
+.botoes-carrossel {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.botoes-carrossel button {
+  background-color: #bc955b;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botoes-carrossel button:hover {
+  background-color: #8d6833;
+}
+
+/* ===================== Sobre Nós ===================== */
+section.sobre {
+  background-color: #f5ddcb;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: auto 130px 20px ;
+  background-color: #F5EADD;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 75px;
+}
+.sobre h2 {
+  font-size: 2em;
+  color: #bc955b;
+  margin-bottom: 20px;
+  margin-left: 160px;    
+  margin-right: 160px;
+}
+.sobre p {
+  font-size: 1.2em;
+  color: #333;
+  max-width: 905px;
+  margin: 0 auto 20px;
+  text-align: justify;
+}
+.sobre button{
+  background-color: #bc955b;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/*====================== Footer ===================== */
+footer {
+  background-color: #bc955b;
+  color: #fff;
+  padding: 20px 35px 20px 35px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.contato p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #fff;
+  text-align: left;
+}
+.redes-sociais {
+  max-width: 360px;
+}
+.redes-sociais p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #fff;
+  text-align: left;
+}
+.redes-sociais li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.redes-sociais a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: all 0.5s ease;
+}
+.redes-sociais a:hover {
+  font-size: 1.2em;
+  color: #a4a09b;
+  transition: all 0.5s ease;
+}
+.logo-footer {
+  width: 273px;
+}
+.logo-footer img{
+  padding-top: 20px;
+  width: 150px;
+  height: auto;
+  max-width: 150px;
+}
+.form-contato {
+  background-color: #F5EADD;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(188, 149, 91, 0.15);
+  padding: 5px 15px;
+  margin: 15px 0;
+  min-width: 260px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-contato h2 {
+  color: #bc955b;
+  font-size: 1.3em;
+  margin-bottom: 18px;
+}
+
+.form-contato label {
+  color: #572920;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.form-contato input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #d1b28a;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #fff;
+  color: #572920;
+  transition: border-color 0.3s;
+}
+
+.form-contato input:focus {
+  border-color: #bc955b;
+  outline: none;
+}
+
+.form-contato button[type="submit"] {
+  background-color: #bc955b;
+  color: #fff;
+  padding: 10px 22px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-contato button[type="submit"]:hover {
+  background-color: #a67c41;
+  transform: scale(1.02);
+}
+.form-contato .form-flex {
+  width: 100%;
+}
+
+.form-contato .linha-campos {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.form-contato .campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  .form-contato .linha-campos {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.footer-copy {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 0.95em;
+  margin-top: 34px;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* Acrescente ao final do Style.css */
+
+/* Estilo exclusivo para a página saiba mais */
+.sobre-page {
+  margin-top: 100px;
+  text-align: center;
+  background-color: #f5eadd;
+  padding: 40px 20px 20px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.sobre-banner {
+  max-width: 400px;
+  width: 90%;
+  border-radius: 16px;
+  margin: auto;
+}
+
+.sobre-titulo {
+  font-size: 2em;
+  color: #bc955b;
+  margin-bottom: 20px;
+}
+
+.sobre-descricao {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #333;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE AVANÇADA */
+
+/* ----------- GERAL ----------- */
+@media (max-width: 1200px) {
+  section.produtos, section.produtos2 {
+    padding: 0 10px;
+    gap: 18px;
+  }
+  .sobre-page {
+    max-width: 98vw;
+    padding: 30px 5vw 20px 5vw;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 10px;
+  }
+  header h1,
+  header .logo {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  header nav ul {
+    gap: 10px;
+    font-size: 0.95em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  header nav ul li a {
+    padding: 0px 6px;
+    font-size: 0.97em;
+  }
+  .logo {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .destaques {
+    max-width: 98vw;
+    height: 340px;
+  }
+  .sobre-page {
+    padding: 25px 2vw 15px 2vw;
+  }
+  section.sobre {
+    margin: 30px 10px 20px 10px;
+    padding: 25px 10px 15px 10px;
+  }
+}
+
+/* HEADER: Esconde logo e título em telas pequenas */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 2vw;
+    min-height: 40px;
+    height: auto;
+  }
+  header h1,
+  header .logo {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  header nav ul {
+    gap: 7px;
+    font-size: 0.93em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  header nav ul li a {
+    padding: 0px 6px;
+    font-size: 0.97em;
+  }
+  .logo {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .destaques,
+  .botoes-carrossel {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+  .sobre-banner {
+    max-width: 90vw;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  .sobre-titulo {
+    font-size: 1.05em;
+    margin-bottom: 8px;
+  }
+  .sobre-descricao {
+    font-size: 0.93em;
+    line-height: 1.4;
+    padding: 0 1vw;
+    text-align: justify;
+  }
+  section.sobre {
+    margin: 10px 1vw 8px 1vw;
+    padding: 8px 1vw 8px 1vw;
+    border-radius: 6px;
+  }
+  .titulo-categorias {
+    font-size: 1.1em;
+    margin: 18px 0 10px 0;
+  }
+  .titulo-categorias::after {
+    width: 40px;
+    height: 2px;
+    margin: 6px auto 0;
+  }
+  section.produtos, section.produtos2 {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 0 2vw;
+  }
+  article.produto {
+    padding: 8px;
+    border-radius: 8px;
+  }
+  article.produto img {
+    max-height: 90px;
+    border-radius: 6px;
+    margin: auto;
+  }
+  article.produto h3 {
+    font-size: 0.98em;
+    margin-bottom: 2px;
+  }
+  article.produto p {
+    font-size: 0.95em;
+  }
+  article.produto .comprar {
+    font-size: 0.93em;
+    padding: 7px 10px;
+    border-radius: 6px;
+    margin-top: 5px;
+  }
+  .form-contato {
+    min-width: 99vw;
+    max-width: 100vw;
+    padding: 4px 0.5vw;
+    border-radius: 6px;
+  }
+  .form-contato h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .form-contato label {
+    font-size: 0.97em;
+  }
+  .form-contato input {
+    font-size: 0.97em;
+    padding: 6px 8px;
+    border-radius: 6px;
+  }
+  .form-contato button[type="submit"] {
+    font-size: 0.97em;
+    padding: 7px 12px;
+    border-radius: 6px;
+  }
+  .footer-copy {
+    font-size: 0.8em;
+    margin-top: 6px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 2vw;
+  }
+  .contato, .redes-sociais, .form-contato {
+    min-width: 90vw;
+    max-width: 99vw;
+    margin-bottom: 10px;
+  }
+}
+
+/* Ajustes ainda mais finos para dispositivos muito pequenos */
+@media (max-width: 420px) {
+  header {
+    padding: 2px 1vw;
+    min-height: 30px;
+  }
+  header nav ul {
+    gap: 3px;
+    font-size: 0.9em;
+  }
+  header nav ul li a {
+    padding: 2px 3px;
+    font-size: 0.93em;
+  }
+  .sobre-banner {
+    max-width: 99vw;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+  .sobre-titulo {
+    font-size: 0.98em;
+    margin-bottom: 4px;
+  }
+  .sobre-descricao {
+    font-size: 0.89em;
+    padding: 0 1vw;
+  }
+  .titulo-categorias {
+    font-size: 1em;
+    margin: 10px 0 5px 0;
+  }
+  .titulo-categorias::after {
+    width: 25px;
+    height: 2px;
+    margin: 3px auto 0;
+  }
+  section.produtos, section.produtos2 {
+    gap: 4px;
+    padding: 0 1vw;
+  }
+  article.produto {
+    padding: 4px;
+    border-radius: 4px;
+  }
+  article.produto img {
+    max-height: 60px;
+    border-radius: 3px;
+    margin: auto;
+  }
+  article.produto h3 {
+    font-size: 0.93em;
+    margin-bottom: 1px;
+  }
+  article.produto p {
+    font-size: 0.9em;
+  }
+  article.produto .comprar {
+    font-size: 0.9em;
+    padding: 4px 7px;
+    border-radius: 4px;
+    margin-top: 2px;
+  }
+  .form-contato {
+    min-width: 99vw;
+    max-width: 100vw;
+    padding: 2px 0.2vw;
+    border-radius: 4px;
+  }
+  .form-contato h2 {
+    font-size: 0.93em;
+    margin-bottom: 5px;
+  }
+  .form-contato label {
+    font-size: 0.93em;
+  }
+  .form-contato input {
+    font-size: 0.93em;
+    padding: 4px 5px;
+    border-radius: 4px;
+  }
+  .form-contato button[type="submit"] {
+    font-size: 0.93em;
+    padding: 4px 7px;
+    border-radius: 4px;
+  }
+  .footer-copy {
+    font-size: 0.75em;
+    margin-top: 3px;
+  }
+  footer {
+    padding: 5px 1vw;
+  }
+  .contato, .redes-sociais, .form-contato {
+    min-width: 98vw;
+    max-width: 100vw;
+    margin-bottom: 6px;
+  }
+}
+
+/* Ajustes para imagens e textos nunca ultrapassarem a tela */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sobre-descricao, .sobre-titulo, .sobre-banner, .form-contato, .footer-copy, .contato, .redes-sociais {
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+@media (max-width: 940px) {
+  .destaques,
+  .botoes-carrossel {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+}

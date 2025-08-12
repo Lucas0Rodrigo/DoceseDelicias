@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Style.css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./img/Fav Icon.png" type="image/png" />
+  <title>Sobre a Doces & Delícias</title>
+</head>
+<body>
+  <header>
+    <h1><a href="./Index.html">Doces&Delícias</a></h1>
+    <nav>
+      <ul>
+        <li><a href="Index.html#Home">Início</a></li>
+        <li><a href="Index.html#Ds">Destaques</a></li>
+        <li><a href="Index.html#Produtos">Comprar</a></li>
+        <li><a href="Index.html#Sobre">Sobre</a></li>
+        <li><a href="Index.html#Ctt">Contato</a></li>
+      </ul>
+    </nav>
+    <img src="./img/Fav Icon.png" alt="Logo" class="logo" />
+  </header>
+
+  <main>
+    <section class="sobre-page">
+      <img src="./img/Banner.webp" alt="Doces & Delícias" class="sobre-banner" />
+      <h2 class="sobre-titulo">Sobre a Doces &amp; Delícias</h2>
+      <p class="sobre-descricao">
+        A Doces &amp; Delícias nasceu do sonho de transformar momentos simples em lembranças inesquecíveis. Tudo começou na cozinha da Dona Helena, que preparava bolos e doces caseiros para a família, amigos e vizinhos. O que era apenas um hobby, logo virou paixão — e essa paixão foi crescendo até se tornar um negócio de verdade.<br><br>
+        Com receitas tradicionais, ingredientes de qualidade e muito carinho em cada preparo, a Doces &amp; Delícias conquistou o paladar da comunidade local. Hoje, somos referência em doces artesanais, bolos personalizados, tortas e salgados, sempre com aquele gostinho de feito em casa.<br><br>
+        Nosso compromisso vai além de vender produtos: queremos fazer parte das comemorações, das reuniões em família e dos momentos especiais dos nossos clientes. Cada item do nosso cardápio é preparado com dedicação, cuidado e, claro, com muito amor.<br><br>
+        Seja bem-vindo à nossa doce história. Esperamos que você sinta todo o sabor e afeto que colocamos em cada delícia!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <article class="contato">
+      <h2>Contato</h2>
+      <p>
+          Endereço:<br>
+          Rua Exemplo, 123, Leme-SP
+      </p>
+      <p>
+          Telefone:<br>
+          (19) 99999-9999
+      </p>
+      <p>
+          Email:<br>
+          DocesEDelicias@gmail.com
+      </p>
+      <p>
+        Horário de Funcionamento:<br>
+        Segunda a Sábado, das 7h às 18h
+      </p>
+    </article>
+    <article class="redes-sociais">
+      <h2>Redes Sociais</h2>
+      <p>Siga-nos nas redes sociais para ficar por dentro das novidades e promoções!</p>
+      <ul>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+      </ul>
+    </article>
+    <article class="form-contato">
+      <h2>Envie uma mensagem</h2>
+      <form action="#" method="post" class="form-flex">
+        <div class="linha-campos">
+          <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="campo">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required 
+              pattern="\(\d{2}\) \d{5}-\d{4}" 
+              placeholder="(99) 99999-9999"
+              title="Digite no formato (99) 99999-9999">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </article>
+    <div class="footer-copy">
+      &copy; 2025 Doces&Delícias. Todos os direitos reservados.
+    </div>
+  </footer>
+</body>
+</html>

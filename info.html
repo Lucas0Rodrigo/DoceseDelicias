@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Style.css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./img/Fav Icon.png" type="image/png" />
+  <title>Doces&Delícias - Fora do Ar</title>
+</head>
+<body>
+  <header>
+    <h1><a href="./Index.html">Doces&Delícias</a></h1>
+    <nav>
+      <ul>
+        <li><a href="Index.html#Home">Início</a></li>
+        <li><a href="Index.html#Ds">Destaques</a></li>
+        <li><a href="Index.html#Produtos">Comprar</a></li>
+        <li><a href="Index.html#Sobre">Sobre</a></li>
+        <li><a href="Index.html#Ctt">Contato</a></li>
+      </ul>
+    </nav>
+    <img src="./img/Fav Icon.png" alt="Logo" class="logo" />
+  </header>
+
+  <main>
+    <section class="atencao">
+      <article class="att-img">
+        <img src="./img/Atençao.webp" alt="Atenção" />
+      </article>
+      <article class="att-texto">
+        <h2>Site fora do ar!</h2>
+        <p>
+          Devido a muitos acessos simultâneos, nosso site está temporariamente fora do ar.<br>
+          Pedimos desculpas pelo transtorno.<br>
+          Por favor, tente novamente mais tarde.<br>
+          Agradecemos sua compreensão e preferência!
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <article class="contato">
+      <h2>Contato</h2>
+      <p>
+          Endereço:<br>
+          Rua Exemplo, 123, Leme-SP
+      </p>
+      <p>
+          Telefone:<br>
+          (19) 99999-9999
+      </p>
+      <p>
+          Email:<br>
+          DocesEDelicias@gmail.com
+      </p>
+      <p>
+        Horário de Funcionamento:<br>
+        Segunda a Sábado, das 7h às 18h
+      </p>
+    </article>
+    <article class="redes-sociais">
+      <h2>Redes Sociais</h2>
+      <p>Siga-nos nas redes sociais para ficar por dentro das novidades e promoções!</p>
+      <ul>
+        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+      </ul>
+    </article>
+    <article class="form-contato">
+      <h2>Envie uma mensagem</h2>
+      <form action="#" method="post" class="form-flex">
+        <div class="linha-campos">
+          <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="campo">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required 
+              pattern="\(\d{2}\) \d{5}-\d{4}" 
+              placeholder="(99) 99999-9999"
+              title="Digite no formato (99) 99999-9999">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </article>
+    <div class="footer-copy">
+      &copy; 2025 Doces&Delícias. Todos os direitos reservados.
+    </div>
+  </footer>
+</body>
